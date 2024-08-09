@@ -1,0 +1,35 @@
+{
+  "name": "branches-sync",
+  "version": "1.0.0",
+  "description": "GitHub Action to sync a branch when another one is updated",
+  "main": "index.js",
+  "author": "Sansx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sansx/sync-branches/issues"
+  },
+  "homepage": "https://github.com/sansx/sync-branches#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sansx/sync-branches.git"
+  },
+  "keywords": [
+    "GitHub",
+    "Actions",
+    "JavaScript"
+  ],
+  "scripts": {
+    "lint": "eslint index.js",
+    "package": "ncc build index.js -o dist",
+    "test": "eslint index.js && jest"
+  },
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.1",
+    "eslint": "^8.0.0",
+    "jest": "^27.2.5"
+  }
+}
